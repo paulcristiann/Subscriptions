@@ -13,7 +13,7 @@ struct SubscriptionsApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SubscriptionsListView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
